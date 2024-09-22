@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Admin Dashboard</h1>
+      <form id="uploadForm">
+        <label for="itemDescription">Item Description:</label>
+        <textarea id="itemDescription" required></textarea>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" required />
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" required />
+
+        <label for="itemImage">Upload Image:</label>
+        <input type="file" id="itemImage" accept="image/*" required />
+
+        <button type="submit">Upload</button>
+      </form>
+      <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
